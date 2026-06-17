@@ -1,0 +1,127 @@
+.page {
+  min-height: 100vh;
+  padding: 100px 24px 80px;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(124, 92, 252, 0.15);
+  border: 1px solid rgba(124, 92, 252, 0.4);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.updated {
+  color: var(--text3);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--text2);
+  line-height: 1.8;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
+.section h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.section p {
+  font-size: 15px;
+  color: var(--text2);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px 0 12px 4px;
+}
+
+.section ul li {
+  font-size: 15px;
+  color: var(--text2);
+  line-height: 1.7;
+  padding-left: 22px;
+  position: relative;
+}
+
+.section ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.section strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.backBtn {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.backBtn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+.backBtn a:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 90px 18px 60px;
+  }
+  .intro {
+    padding: 16px 18px;
+  }
+}
